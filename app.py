@@ -175,7 +175,6 @@ with col1:
 with col2:
     if (st.session_state.win_bool is True) or (st.button("New Country")):
             st.session_state.country_to_guess = get_random_country()
-            st.write(st.session_state.country_to_guess)
             st.session_state.distance_country = pd.DataFrame({'Country': [ ], 'Distance': [ ]})
             del st.session_state.chat_history
             st.session_state.hint_number = 0
@@ -190,10 +189,6 @@ with col2:
     
 
 
-#looking for the answer
-#st.write("Solution: ", st.session_state.country_to_guess)
-#myenv\Scripts\activate
-#pip install -r requirements.txt
 
 
 
